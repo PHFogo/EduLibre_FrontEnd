@@ -1,0 +1,161 @@
+.home{
+    background: #f4efe7;
+}
+
+/* HERO */
+
+.hero{
+    
+     padding: 120px 60px;
+
+    background: linear-gradient(
+        to bottom,
+       #3d4c5a 0% ,
+        rgba(201,163,107,0.7) 15%,
+        #f4efe7 95%
+    );
+}
+
+
+.hero h1{
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    color: #2f3a44;
+}
+
+.hero span{
+    color: #c9a36b;
+}
+.hero_logo_bg{
+    position: absolute;
+    right: -10px;
+    top: 65%;
+    transform: translateY(-50%);
+
+    height: 500px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+    max-width: 500px;
+}
+
+.search_box{
+    margin-top: 65px;
+    display: flex;
+}
+
+.search_box input{
+    padding: 14px;
+    width: 300px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+}
+
+.search_box button{
+    padding: 14px 24px;
+    border: none;
+    background: linear-gradient(90deg,#c9a36b,#a67c3d);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+
+
+.benefits{
+    display: flex;
+    gap: 25px;
+    padding: 60px;
+}
+
+.benefit_card{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 10px 25px 
+    rgba(240, 185, 89, 0.05);
+}
+
+
+
+.teachers{
+    padding: 60px;
+}
+
+.teachers h2{
+    font-family: "Playfair Display", serif;
+    margin-bottom: 30px;
+}
+
+.teachers_grid{
+    display: flex;
+    gap: 20px;
+}
+
+.teacher_card{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.teacher_img{
+    height: 120px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.teacher_card button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #2f3a44;
+    color: white;
+    border-radius: 8px;
+}
+
+/* STEPS */
+
+.steps{
+    padding: 60px;
+    background: white;
+}
+
+.steps_grid{
+    display: flex;
+    gap: 20px;
+}
+
+.step{
+    flex: 1;
+    text-align: center;
+}
+
+.step h3{
+    font-size: 40px;
+    color: #c9a36b;
+}
+
+/* CTA */
+
+.cta{
+    padding: 80px;
+    text-align: center;
+}
+
+.cta button{
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: linear-gradient(90deg,#c9a36b,#a67c3d);
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
