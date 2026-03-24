@@ -2,7 +2,7 @@
     background: #f4efe7;
 }
 
-/* HERO */
+
 
 .hero{
     
@@ -11,8 +11,8 @@
     background: linear-gradient(
         to bottom,
        #3d4c5a 0% ,
-        rgba(201,163,107,0.7) 15%,
-        #f4efe7 95%
+        rgba(201,163,107,0.7) 30%,
+        #f4efe7 80%
     );
 }
 
@@ -24,12 +24,12 @@
 }
 
 .hero span{
-    color: #c9a36b;
+    color: #d6983a;
 }
 .hero_logo_bg{
     position: absolute;
     right: -10px;
-    top: 65%;
+    top: 75%;
     transform: translateY(-50%);
 
     height: 500px;

@@ -18,7 +18,7 @@ function Header() {
             <nav className="menu_header">
                 <Link to="/">Home</Link>
                 <Link to="/agendamentos">Meus agendamentos</Link>
-                <Link to="/Login">Login</Link>
+                <Link to="/login">Login</Link>
             </nav>
 
         </header>

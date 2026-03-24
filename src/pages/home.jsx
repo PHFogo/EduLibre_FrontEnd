@@ -6,7 +6,6 @@ function Home() {
   return (
     <main className="home">
 
-      {/* HERO */}
       <section className="hero">
 
         <div className="hero_left">
