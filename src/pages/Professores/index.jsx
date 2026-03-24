@@ -1,6 +1,6 @@
 import "./professores.css";
-import react from "react";
-import { userEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+
 function Professores() {
    const [professores, setProfessores] = useState([]);
 
@@ -10,6 +10,7 @@ function Professores() {
          .then((data) => setProfessores(data))
          .catch((error) => console.error("Erro ao buscar professores:", error));
    }, []);
+
    return(
         <div>
             <h1>Professores Disponíveis</h1>
@@ -23,4 +24,5 @@ function Professores() {
         </div>
    )
 }
+
 export default Professores;
