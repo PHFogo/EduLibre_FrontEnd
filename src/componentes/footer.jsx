@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 function Footer(){
     return(
@@ -17,18 +18,18 @@ function Footer(){
 
                 <div className="footer_links">
                     <h4>Navegação</h4>
-                    <a href="#">Home</a>
-                    <a href="#">Professores</a>
-                    <a href="#">Agendamentos</a>
-                    <a href="#">Login</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/professores">Professores</Link>
+                    <Link to="/agendamentos">Agendamentos</Link>
+                    <Link to="/login">Login</Link>
                 </div>
 
                 <div className="footer_links">
                     <h4>Suporte</h4>
-                    <a href="#">Contato</a>
-                    <a href="#">Ajuda</a>
-                    <a href="#">Termos</a>
-                    <a href="#">Privacidade</a>
+                    <a href="mailto:contato@edulibre.com.br">Contato</a>
+                    <a href="#ajuda">Ajuda</a>
+                    <a href="#termos">Termos</a>
+                    <a href="#privacidade">Privacidade</a>
                 </div>
 
             </div>

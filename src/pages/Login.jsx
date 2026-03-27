@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './login.css'
 import { useNavigate } from 'react-router-dom'
+import api from '../services/api'
 
 function Login() {
 
@@ -18,26 +19,12 @@ function Login() {
 
         try{
 
-            const response = await fetch("http://localhost:8080/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    email,
-                    senha
-                })
-            })
+            const response = await api.post("/login", { email, senha })
+            const data = response.data
 
-            const data = await response.json()
-
-            if(!response.ok){
-                setErro(data.message || "Erro ao logar")
-                return
-            }
-
-            // salva token
+            // salva token e tipo do usuário
             localStorage.setItem("token", data.token)
+            localStorage.setItem("tipo", data.tipo)
 
             // redireciona
             if(data.tipo === "ALUNO"){
@@ -46,8 +33,9 @@ function Login() {
                 navigate("/professor")
             }
 
-        }catch{
-            setErro("Erro no servidor")
+        }catch(err){
+            const msg = err.response?.data?.message || "Erro no servidor"
+            setErro(msg)
         }
 
     }

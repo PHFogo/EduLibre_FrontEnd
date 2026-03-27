@@ -1,6 +1,5 @@
 import "./home.css";
 import logo from "../assets/logo.png";
-import footer from "../componentes/footer.jsx";
 
 function Home() {
   return (
@@ -19,7 +18,7 @@ function Home() {
             O conhecimento certo está a poucos cliques de distância.
           </p>
   
-   <img src={logo} className="hero_logo_bg" />
+   <img src={logo} className="hero_logo_bg" alt="EduLibre logo" />
 
           <div className="search_box">
             <input placeholder="O que você quer aprender?" />
